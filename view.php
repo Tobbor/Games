@@ -69,7 +69,7 @@ echo "
 
 function outputTitle()
 {
-	echo "<h5>Turn Based Game Of Doom!!<br/><small>Done with all parts</small><br/></h5>";
+	echo "<h5>Turn Based Game<br/><small>Part 6 : Alternate Views</small><br/></h5>";
 }
 
 
@@ -123,20 +123,6 @@ function outputObituary()
 	}
 }
 
-/*function outputView($eventText) {
-    outputStyle();
-    outputTitle();
-    outputGameWorld();
-    outputUserInterface();
-    outputStats();
-
-    if(isset($eventText)) {
-    	outputEvent($eventText);
-    }
-    if (!\model\playerAlive()) {
-   	    outputObituary();
-    }
-}*/
 
 function outputView($eventText) {
 
@@ -197,7 +183,7 @@ echo "
 </div>
 
 <div id='back'>
-<a href='http://borjessontobias.utbildning.conduco.eu/'>
+<a href='#'>
 <img src='images/Back.png'>
 </a>
 </div>
