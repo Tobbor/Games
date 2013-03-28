@@ -67,15 +67,6 @@ h5 {
 
 }
 
-#borderindex {
-	background-image:url("information.png");
-	width: 547px;
-	height: 543px;
-	position:fixed;
-    top: 75px;
-    left: 470px;
-}
-
 #dead {
 	position:absolute;
 	right:0px;
