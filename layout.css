@@ -1,0 +1,131 @@
+#bg {
+	background-image: url("../images/blackhole.jpg");
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left: 1px;
+	top: 1px;
+}
+
+#top {
+	 background-image: url("../images/Top.png");
+	 width: 540px;
+	 height: 103px;
+	 margin: auto;
+	 position:absolute;
+	 top:30px;
+	 left:70px;
+}
+
+h5 {
+	color:#62ffd8;
+	position:absolute;
+	top:-20px;
+	left:55px;
+}
+
+#gameworld {
+
+	width: 703px;
+	height: 400px;
+	margin: auto;
+	position:absolute;
+	left: 15px;
+	top: 180px;
+}
+
+#text {
+	background-image: url("../images/Stats.png");
+	width: 209px;
+	height: 207px;
+	margin: auto;
+	position:absolute;
+	left: 725px;
+	top: 30px;
+	color:#62ffd8;
+}
+#stats {
+	background-image: url("../images/Event.png");
+	width: 209px;
+	height: 207px;
+	margin: auto;
+	position:absolute;
+	left: 1140px;
+	top: 20px;
+	color:#62ffd8;
+}
+
+#event {
+	background-image: url("../images/Event.png");
+	width: 300px;
+	height: 375px;
+	margin: auto;
+	position:absolute;
+	right: 1px;
+	top: 300px;
+	color:#62ffd8;
+
+}
+
+#borderindex {
+	background-image:url("information.png");
+	width: 547px;
+	height: 543px;
+	position:fixed;
+    top: 75px;
+    left: 470px;
+}
+
+#dead {
+	position:absolute;
+	right:0px;
+	top: 500px;
+	color:#62ffd8;
+}
+
+#back {
+	position:absolute;
+	width:450px;
+	height:50px;
+	bottom: 10px;
+	left: 480px;
+}
+
+#up_arrow
+{
+	position: absolute;
+	width:64px;
+	height:134px;
+	margin-top:265px;
+	margin-left:490px;
+}
+
+#down_arrow
+{
+
+	position: absolute;
+	width:64px;
+	height:134px;
+	margin-top:465px;
+	margin-left:490px;
+}
+
+#right_arrow
+{
+
+	position: absolute;
+	width:130px;
+	height:67px;
+	margin-top:400px;
+	margin-left:530px;
+}
+
+#left_arrow
+{
+    width:130px;
+	height:67px;
+	position: absolute;
+	margin-top:400px;
+	margin-left:390px;
+}
+
