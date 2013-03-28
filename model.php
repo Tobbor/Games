@@ -54,19 +54,23 @@ function init()
 
 }
 
+/*MÃ¥ste skapa en databas pÃ¥ phpmyadmin ifall det ska funka
+ta bort denna funktion ifall du planerar pÃ¥ att kÃ¶ra utan
+databas och Ã¶ppna den gamla function doEvent nedanfÃ¶r.
+*/
 function doEvent()
 {
 
-$link = mysql_connect('localhost', 'c1bortob', '');
+$link = mysql_connect('localhost', 'USER', 'PASSWORD');
 if (!$link)
 {
     die('Not connected : ' . mysql_error());
 }
 
-if ($db_selected = mysql_select_db('c1bortob', $link))
+if ($db_selected = mysql_select_db('USER', $link))
 {
      echo "Connected successfully";
-    //här mysql_close($link);
+    //hï¿½r mysql_close($link);
 }
 else
 {
@@ -100,7 +104,7 @@ changeHP($hp);
 return $text;
 }
 
-
+//Ã–ppna ifall du inte vet hur man skapar en databas pÃ¥ phpmydadmin.
 /*function doEvent()
 {
 	switch(rand(1,7))	//you can alternatively use mt_rand() here...
@@ -112,7 +116,7 @@ return $text;
 		case 1:
 			changeHP(+100);
 			changeXP(0);
-			return "Du åt en banan. +100 HP";
+			return "Du ï¿½t en banan. +100 HP";
 			break;
 
 		case 2:
@@ -120,41 +124,6 @@ return $text;
 			changeXP(0);
 			return "Du slogs med en Minotaur. -50 HP";
 			break;
-
-		case 3:
-			changeHP(0);
-			changeXP(+100);
-			return "Du såg Sebbe liggandes i en buske. Du kastar en sten på han. +100 XP";
-			break;
-
-                case 4:
-			changeHP(0);
-			changeXP(+100);
-			return "Du hittade ett par solglasögon.+100 XP";
-			break;
-
-                case 5:
-			changeHP(-100);
-			changeXP(0);
-			return "Du snubbla på en stubbe och förlora ena ögat. -100 HP";
-			break;
-
-		case 6:
-
-		      changeHP(0);
-		      changeXP(100);
-		      return "Du stöter på en trollkarl. +100 XP";
-		      break;
-
-                case 7:
-
-                      changeHP(-500);
-                      changeXP(0);
-                      return "Du ramlar ner i en håla. -500 HP";
-                      break;
-
-
-
 	}
 }*/
 
@@ -170,7 +139,6 @@ function changeXP($a)
 
 function resetSessionData()
 {
-//	unset($_SESSION);
 
 	$_SESSION['herox'] = START_X;
 	$_SESSION['heroy'] = START_Y;
